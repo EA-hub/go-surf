@@ -1,2 +1,2 @@
 # go-surf
-Лендинг Go Serf
+Лендинг Go Surf
