@@ -58,6 +58,17 @@ li
         span
             font-weight: 100
 
+.description
+    display: inline-block
+    text-align: left
+    padding-left: 135px
+    &__head
+        display: flex
+        align-items: center
+        font-size: 40px
+        font-weight: 800
+
+
 .btn
     font-size: 40px
     line-height: 36px
@@ -86,9 +97,6 @@ li
             right: 17px
             transform: translateY(-50%)
 
-
-
-
 .headline-left
     font-size: 22px
     line-height: 32px
@@ -106,4 +114,88 @@ li
         background-color: $text-color
         left: 0
         top: 50%
-    
+
+.headline-right
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 7.33333px
+    color: $text-color
+    opacity: 0.5
+    position: relative
+    display: inline-block
+    padding-bottom: 10px
+    &::before 
+        content: ""
+        position: absolute
+        width: 80px
+        height: 1px
+        background-color: $text-color
+        right: -96px
+        top: 15px
+.surf
+    padding: 160px 0 120px
+.holder
+     padding-bottom: 250px
+.sleep
+    padding: 130px 0 120px
+.shop
+    padding: 160px 0 120px
+
+
+.quantity 
+    display: inline-block
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+
+input[type=number]
+    -moz-appearance: textfield
+
+
+.quantity input 
+    width: 45px
+    height: 35px
+    display: block
+    border: none
+    background-color: transparent
+    font-size: 40px
+    line-height: 36px
+    font-weight: 800
+    color: $text-color
+
+.quantity input:focus 
+    outline: 0
+
+
+.quantity-nav 
+    float: left
+    position: static
+    height: 42px
+
+
+.quantity-button 
+    position: relative
+    cursor: pointer
+    width: 20px
+    height: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    top: 55px
+
+
+.quantity-button.quantity-up 
+    position: absolute
+    top: 55px
+    right: 0
+
+
+.quantity-button.quantity-down 
+    position: absolute
+    bottom: -1px
+    right: 30px
+
