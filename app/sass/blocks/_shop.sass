@@ -1,0 +1,146 @@
+.shop
+    background-image: url(../img/shop-bg.png)
+    background-repeat: no-repeat
+    background-position: right bottom 175px
+    .slider-arrows
+            opacity: 0.25
+    &__slider
+        &-info
+            margin-right: 355px
+            padding-top: 160px
+        .description__title
+            max-width: 340px
+            margin-bottom: 47px
+        &-inner
+            display: flex
+            height: 695px
+        &-content
+            display: flex
+            align-items: flex-end
+        &-stars
+            display: flex
+            justify-content: flex-start
+            margin-left: -15px
+        &-cost
+            font-size: 32px
+            line-height: 40px
+            font-weight: 800
+            margin-bottom: 64px
+    &__extras
+        &-inner
+            display: flex
+            align-items: flex-end
+        &-title
+            font-size: 28px
+            line-height: 40px
+            font-weight: 800
+            margin-bottom: 25px
+        &-box
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-right: 100px
+            img
+                margin-bottom: 36px
+        &-name
+            line-height: 22px
+            letter-spacing: 8px
+            text-transform: uppercase
+            color: rgba($text-color, .5 )
+            font-size: 18px
+            margin-bottom: 16px
+        &-price
+            font-size: 18px
+            line-height: 40px
+            font-weight: 800
+            
+.shop__slider-img
+    margin-right: 220px
+
+.surfboard
+    position: relative
+    &-box
+        position: absolute
+        &__content
+            display: none
+            position: absolute
+            width: 359px
+            top: -15px
+            left: 40px
+            font-size: 24px
+            line-height: 24px
+            font-weight: 800
+            padding-left: 104px
+            &::before
+               content: ""
+               position: absolute
+               width: 80px
+               height: 1px
+               background-color: $text-color
+               left: 0 
+               top: 50%
+        &__circle
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            position: relative
+            background-color: $text-color
+            cursor: pointer
+            &.active
+                .circle-row
+                  transform: translate(-50%, -50%) rotate(0deg)
+.surfboard__position--1
+    right: 40px
+    top: 215px
+.surfboard__position--2
+    left: -6px
+    top: 315px
+    .surfboard-box__content
+        padding-left: 0
+        padding-right: 104px
+        top: -15px
+        left: -380px
+        &::before
+            content: ""
+            position: absolute
+            width: 80px
+            height: 1px
+            background-color: $text-color
+            right: 0 
+            left: auto
+            top: 50%
+
+.surfboard__position--3
+    left: 52px
+    bottom: 70px
+    .surfboard-box__content
+        padding-left: 0
+        padding-right: 104px
+        top: -15px
+        left: -380px
+        &::before
+            content: ""
+            position: absolute
+            width: 80px
+            height: 1px
+            background-color: $text-color
+            right: 0 
+            left: auto
+            top: 50%
+
+.circle-row
+    background-color: $main-color
+    position: absolute
+    width: 12px
+    height: 2px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%) rotate(0deg)
+    &+.circle-row
+       transform: translate(-50%, -50%) rotate(90deg)
+
+.surfboard-box__circle.active + .surfboard-box__content
+        display: block
+
+.surfboard__position--2
+
