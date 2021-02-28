@@ -3,8 +3,8 @@ $(function(){
 $('.header__slider').slick({
     infinite: true,
     fade: true,
-    prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrow-left.svg" alt="arrow right"></img>',
-    nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrow-right.svg" alt="arrow right"></img>',
+    prevArrow: '<img class="slider-arrows slider-arrows__left" src="app/img/arrow-left.svg" alt="arrow right"></img>',
+    nextArrow: '<img class="slider-arrows slider-arrows__right" src="app/img/arrow-right.svg" alt="arrow right"></img>',
     asNavFor: '.slider-dotshead'
 });
 
@@ -20,8 +20,8 @@ $('.surf-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
-    prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrow-left.svg" alt="arrow right"></img>',
-    nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrow-right.svg" alt="arrow right"></img>',
+    prevArrow: '<img class="slider-arrows slider-arrows__left" src="app/img/arrow-left.svg" alt="arrow right"></img>',
+    nextArrow: '<img class="slider-arrows slider-arrows__right" src="app/img/arrow-right.svg" alt="arrow right"></img>',
     asNavFor: '.slider-map',
     focusOnSelect: true
 });
@@ -37,18 +37,18 @@ $('.slider-map').slick({
 $('.holder__slider').slick({
     infinite: true,
     fade: true,
-    prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrow-left.svg" alt="arrow right"></img>',
-    nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrow-right.svg" alt="arrow right"></img>'
+    prevArrow: '<img class="slider-arrows slider-arrows__left" src="app/img/arrow-left.svg" alt="arrow right"></img>',
+    nextArrow: '<img class="slider-arrows slider-arrows__right" src="app/img/arrow-right.svg" alt="arrow right"></img>'
 });
 
 $('.shop__slider').slick({
   infinite: true,
   fade: true,
-  prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrow-left.svg" alt="arrow right"></img>',
-  nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrow-right.svg" alt="arrow right"></img>'
+  prevArrow: '<img class="slider-arrows slider-arrows__left" src="app/img/arrow-left.svg" alt="arrow right"></img>',
+  nextArrow: '<img class="slider-arrows slider-arrows__right" src="app/img/arrow-right.svg" alt="arrow right"></img>'
 });
 
-$('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="../img/btn-plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="../img/btn-minus.svg" alt=""></div></div>').insertAfter('.quantity input');
+$('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="../app/img/btn-plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="../app/img/btn-minus.svg" alt=""></div></div>').insertAfter('.quantity input');
 $('.quantity').each(function() {
   var spinner = $(this),
     input = spinner.find('input[type="number"]'),
